@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SJIT | INCOGNITO PARTICIPANTS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+              
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>College</th>
+        <th>Phone No</th>
+      </tr>
+    </thead>
+    <tbody>
+    	{% for val in data %}
+      <tr>
+        <td>{{ val.name }}</td>
+        <td>{{ val.email }}</td>
+        <td>{{ val.college }}</td>
+        <td>{{ val.phone_no }}</td>
+      {% endfor %}
+      
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
